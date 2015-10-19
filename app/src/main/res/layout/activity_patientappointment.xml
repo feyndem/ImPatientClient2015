@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/estimatedWaiting"
+        android:id="@+id/appointmentTime"
+        android:layout_marginTop="@dimen/abc_text_size_body_2_material"
+        android:textAlignment="center"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/ic_autorenew_black_24dp"
+        android:id="@+id/refreshWaiting"
+        android:layout_below="@id/appointmentTime"
+        android:layout_centerHorizontal="true"
+        android:stateListAnimator="@null"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:id="@+id/separator"
+        android:layout_below="@id/refreshWaiting"
+        android:background="#2222"
+        android:layout_marginTop="10dip"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="@dimen/abc_text_size_body_2_material"
+        android:padding="15dip"
+        android:id="@+id/checkinButton"
+        android:text="@string/checkinButton"
+        android:background="@drawable/roundedbutton"
+        android:textSize="20dip"
+        android:textColor="#ffff"
+        />
+
+</RelativeLayout>
